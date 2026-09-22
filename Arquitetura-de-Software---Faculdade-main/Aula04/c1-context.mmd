@@ -1,0 +1,12 @@
+flowchart TD
+    Vendedor(["Vendedor<br>Registra pedidos de clientes"])
+    Admin(["Administrador<br>Cadastra e remove produtos"])
+    Estoque(["Equipe de Estoque<br>Controla entradas e saídas"])
+
+    subgraph SYS["Sistema de Vendas e Estoque"]
+        Sistema["Sistema de Vendas e Estoque"]
+    end
+
+    Vendedor -->|Registra pedidos| Sistema
+    Admin -->|Gerencia produtos| Sistema
+    Estoque -->|Registra entradas e saídas| Sistema

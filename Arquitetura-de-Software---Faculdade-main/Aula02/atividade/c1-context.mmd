@@ -1,0 +1,20 @@
+flowchart TD
+    Cliente(["Cliente<br>realiza compra e pagamento"])
+    Caixa(["Operador de Caixa<br>registra produtos e finaliza venda"])
+    Gerente(["Gerente<br>acompanha vendas e estoque"])
+
+    subgraph SC["Sistema de Caixa"]
+        PDV["Sistema de PDV"]
+        Relatorios["Painel de Relatórios"]
+    end
+
+    Pagamento["Gateway de Pagamento"]
+    Estoque["Sistema de Estoque"]
+
+    Cliente --> |Realiza compra| PDV
+    Caixa --> |Registra produtos e finaliza venda| PDV
+    Gerente --> |Consulta vendas| Relatorios
+
+    PDV --> |Processa pagamento| Pagamento
+    PDV --> |Atualiza estoque| Estoque
+    PDV --> |Envia dados de vendas| Relatorios

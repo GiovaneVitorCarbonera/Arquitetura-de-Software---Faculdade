@@ -1,0 +1,31 @@
+flowchart TD
+    Vendedor(["Vendedor"])
+    Admin(["Administrador"])
+    Estoque(["Equipe de Estoque"])
+
+    subgraph SYS["Sistema de Vendas e Estoque"]
+
+        subgraph AP["Camada de Apresentação"]
+            AppVendas["Aplicação de Vendas<br>Registra pedidos e consulta produtos"]
+            AppAdmin["Painel Administrativo<br>Gerencia produtos"]
+            AppEstoque["Painel de Estoque<br>Controla entradas e saídas"]
+        end
+
+        subgraph DOM["Camada de Domínio"]
+            API["API / Backend<br>Regras de negócio"]
+        end
+
+        subgraph DAT["Camada de Dados"]
+            DB[("Banco de Dados<br>Produtos, pedidos e estoque")]
+        end
+    end
+
+    Vendedor -->|Acessa| AppVendas
+    Admin -->|Acessa| AppAdmin
+    Estoque -->|Acessa| AppEstoque
+
+    AppVendas -->|Requisições| API
+    AppAdmin -->|Requisições| API
+    AppEstoque -->|Requisições| API
+
+    API -->|Lê e grava| DB
