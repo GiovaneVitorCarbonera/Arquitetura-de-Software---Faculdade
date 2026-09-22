@@ -1,0 +1,37 @@
+flowchart TD
+    Caixa(["Operador de Caixa"])
+
+    subgraph API["API do Sistema de Caixa"]
+        VendaController["Venda Controller"]
+        ProdutoController["Produto Controller"]
+        PagamentoController["Pagamento Controller"]
+
+        VendaService["Venda Service"]
+        ProdutoService["Produto Service"]
+        PagamentoService["Pagamento Service"]
+
+        VendaRepository["Venda Repository"]
+        ProdutoRepository["Produto Repository"]
+
+        DB[("Banco de Dados")]
+    end
+
+    Gateway["Gateway de Pagamento"]
+    Estoque["Sistema de Estoque"]
+
+    Caixa --> |Registra venda| VendaController
+    Caixa --> |Consulta produto| ProdutoController
+    Caixa --> |Finaliza pagamento| PagamentoController
+
+    VendaController --> VendaService
+    ProdutoController --> ProdutoService
+    PagamentoController --> PagamentoService
+
+    VendaService --> VendaRepository
+    ProdutoService --> ProdutoRepository
+
+    VendaService --> |Atualiza estoque| Estoque
+    PagamentoService --> |Processa pagamento| Gateway
+
+    VendaRepository --> DB
+    ProdutoRepository --> DB
