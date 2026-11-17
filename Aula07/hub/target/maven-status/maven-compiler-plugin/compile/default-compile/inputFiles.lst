@@ -1,0 +1,15 @@
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\in\rest\FaturamentoController.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\out\persistence\FaturaJpaEntity.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\out\persistence\FaturaPersistenceAdapter.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\out\persistence\SpringDataFaturaRepository.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\out\queue\BoletoQueueAdapter.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\out\smtp\EmailSmtpAdapter.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\adapter\out\soap\NotaFiscalSoapAdapter.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\application\port\in\FaturarPedidoUseCase.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\application\port\out\EmissorBoletoPort.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\application\port\out\EmissorNotaFiscalPort.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\application\port\out\FaturaRepositoryPort.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\application\port\out\NotificadorEmailPort.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\application\service\FaturamentoService.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\domain\Fatura.java
+C:\Users\Zehous\Desktop\Atividades\Arquitetura-de-Software---Faculdade\Aula07\hub\src\main\java\br\com\hub\HubApplication.java

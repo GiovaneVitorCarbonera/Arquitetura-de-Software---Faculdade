@@ -1,0 +1,18 @@
+sequenceDiagram
+    actor Estoquista
+    participant Tela as Tela de Estoque
+    participant Controller as ProdutoController
+    participant Service as ProdutoService
+    participant Produto as Produto
+    participant Banco as Banco de Dados
+
+    Estoquista->>Tela: Informa produto e quantidade
+    Tela->>Controller: Solicita entrada ou saída
+    Controller->>Service: registrarEntrada/registrarSaida
+    Service->>Banco: Busca produto
+    Banco-->>Service: Produto e estoque atual
+    Service->>Produto: Valida status e quantidade
+    Produto-->>Service: Atualiza estoque e status
+    Service->>Banco: Persiste movimentação
+    Banco-->>Controller: Operação concluída
+    Controller-->>Tela: Exibe novo estoque e status

@@ -1,0 +1,21 @@
+flowchart TD
+    Inicio([Início]) --> Informar[Informar produto e quantidade]
+    Informar --> Localizar{Produto existe?}
+    Localizar -- Não --> ErroProduto[Informar produto não encontrado]
+    Localizar -- Sim --> Descontinuado{Está descontinuado?}
+    Descontinuado -- Sim --> ErroDescontinuado[Recusar saída]
+    Descontinuado -- Não --> QuantidadeValida{Quantidade maior que zero?}
+    QuantidadeValida -- Não --> ErroQuantidade[Recusar quantidade inválida]
+    QuantidadeValida -- Sim --> EstoqueSuficiente{Estoque suficiente?}
+    EstoqueSuficiente -- Não --> ErroEstoque[Recusar saída por falta de estoque]
+    EstoqueSuficiente -- Sim --> Baixar[Subtrair quantidade do estoque]
+    Baixar --> Zerou{Estoque ficou zero?}
+    Zerou -- Sim --> Indisponivel[Definir status INDISPONÍVEL]
+    Zerou -- Não --> Disponivel[Manter status DISPONÍVEL]
+    Indisponivel --> Persistir[Salvar alteração]
+    Disponivel --> Persistir
+    Persistir --> Fim([Fim])
+    ErroProduto --> Fim
+    ErroDescontinuado --> Fim
+    ErroQuantidade --> Fim
+    ErroEstoque --> Fim

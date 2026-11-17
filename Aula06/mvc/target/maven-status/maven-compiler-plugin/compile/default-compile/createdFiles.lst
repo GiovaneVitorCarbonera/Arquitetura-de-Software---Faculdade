@@ -1,0 +1,8 @@
+br\com\mvc\controller\ProdutoController.class
+br\com\mvc\service\ProdutoService.class
+br\com\mvc\repository\ProdutoRepository.class
+br\com\mvc\config\SecurityConfig.class
+br\com\mvc\model\StatusProduto.class
+br\com\mvc\MvcApplication.class
+br\com\mvc\model\Produto.class
+br\com\mvc\controller\ProdutoController$OperacaoProduto.class

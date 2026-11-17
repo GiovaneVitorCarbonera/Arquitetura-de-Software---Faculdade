@@ -1,0 +1,17 @@
+br\com\hub\adapter\out\soap\NotaFiscalSoapAdapter.class
+br\com\hub\HubApplication.class
+br\com\hub\adapter\out\smtp\EmailSmtpAdapter.class
+br\com\hub\application\port\in\FaturarPedidoUseCase.class
+br\com\hub\application\port\out\FaturaRepositoryPort.class
+br\com\hub\domain\Fatura.class
+br\com\hub\adapter\in\rest\FaturamentoController$FaturaResponse.class
+br\com\hub\adapter\out\persistence\FaturaPersistenceAdapter.class
+br\com\hub\adapter\out\persistence\FaturaJpaEntity.class
+br\com\hub\adapter\in\rest\FaturamentoController$PedidoRequest.class
+br\com\hub\application\port\out\EmissorBoletoPort.class
+br\com\hub\application\port\out\EmissorNotaFiscalPort.class
+br\com\hub\application\port\out\NotificadorEmailPort.class
+br\com\hub\adapter\in\rest\FaturamentoController.class
+br\com\hub\adapter\out\persistence\SpringDataFaturaRepository.class
+br\com\hub\adapter\out\queue\BoletoQueueAdapter.class
+br\com\hub\application\service\FaturamentoService.class
